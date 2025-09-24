@@ -43,7 +43,9 @@ export default function Navbar() {
             <li>
               <Link href="/">Home</Link>
             </li>
-            {session && (
+            {session && <>
+            
+            
               <li>
                 <Link className="relative" href="/cart">
                   Cart{" "}
@@ -54,13 +56,18 @@ export default function Navbar() {
                   )}
                 </Link>
               </li>
-            )}
+              
+                <li>
+              <Link href="/wishlist">Wishlist</Link>
+            </li>
+                  </>
+
+              
+          }
             <li>
               <Link href="/products">Products</Link>
             </li>
-            <li>
-              <Link href="/wishlist">Wishlist</Link>
-            </li>
+          
            
             <li>
               <Link href="/categories">Categories</Link>
